@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Dream Games</title>
+        <link rel="stylesheet" href="zowaL.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <div class="game_box_art">
+            <img src="./img/00.png">
+        </div>
+        <div class="texts">
+            <div class="game_brief_description">
+                <h1>Dream Launcher</h1>
+                <h3>Это обычный лаунчер без всякой рекламы. Тут нету встроенных версий с optifine или forge как у tlauncher, но вы можете их установить в любой момент.</h3>
+                <div class="donwload_button">
+                    <a href="https://drive.google.com/drive/folders/1kpSmvRdYLfbcb5zlDMDlA3yfiSQKamcp?usp=drive_link">Скачать</a>
+                </div>
+            </div>
+            <div class="header_info_bottom">
+                <div class="tabs_group">
+                    <div class="tab_active" id="firstActiveTab" onclick="clickTab(event)" data-tab-id="tab_description">Информация</div>
+                    <div onclick="clickTab(event)" data-tab-id="tab_system_requiments">Примечания</div>
+                    <div onclick="clickTab(event)" data-tab-id="tab_system_dream_games">О Dream Games</div>
+                </div>
+                <div id="tab_description" class="tab_content">
+                    <p>Что бы minecraft запустился обязательно напишите ник (username), без него при запуске лаунчер просто не запустит minecraft и вылетит.</p>
+                    <p>Это наш первый проект поэтому не судите строго, если что то не так то помните нам по 13-15 лет. Наша компания называется: Dream games, Игры мечты</p>
+                </div>
+                <div id="tab_system_requiments" class="invisible tab_content">
+                    <p>У нашего лайнчера отдельная папка, не как обычно .minecraft, а .zowalauncher</p>
+                    <p>Вы верно поняли, в нашей группе авторов произошли разногласия, поэтому где то zowa launcher а где то dream launcher</p>
+                </div>
+                <div id="tab_system_dream_games" class="invisible tab_content">
+                    <p>Здравствуйте! Наша команда называется Dream Games (наш логотип вы можете увидеть ниже)!</p>
+                    <p>Спасибо что зашли на наш сайт! Здесь вы можете увидеть и скачать наши проекты. Пока мы занимаемся</p>
+                    <p>только Dream Launcher, но в будущем мы будем делать и другие проекты! Спасибо что зашли на наш сайт!</p>
+                </div>
+        </div>
+        <div class="dream-logo">
+            <img src="./img/minecraft_title.png">
+        </div>
+        <div class="page3_btn">
+            <a href="./page3.html">Наши проекты</a>
+        </div>
+        <div class="page2_btn">
+            <a href="./page2.html">Наши услуги</a>
+        </div>
+        <div class="page1_btn">
+            <a href="./index.html">Главная</a>
+        </div>
+        <div class="page_name_btn">
+            <h1>Dream Games</h1>
+        </div>
+    </body>
+    <footer>
+        <script src="./js/tabsActive.js"></script>
+    </footer>
+</html>

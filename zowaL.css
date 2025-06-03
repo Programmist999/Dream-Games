@@ -166,3 +166,24 @@ body {
     top: 10;
     left: 30;
 }
+
+.page3_btn {
+    margin-top: 40px;
+    width: fit-content;
+    background-color: rgb(207, 93, 0);
+    border-radius: 7px;
+    padding-block: 10px;
+    padding-inline: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    right: 0;
+    position: fixed;
+    top: 230;
+    left: 30;
+}
+
+.page3_btn > a {
+    margin-block: 0;
+}

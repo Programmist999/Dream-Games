@@ -1,145 +1,47 @@
-@font-face {
-    font-family: Monocraft;
-    src: url('./fonts/Monocraft.otf');
-}
-
-body {
-    background-color: rgb(20, 20, 20);
-    color: #dbdbdb;
-    font-family: Monocraft, monospace;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    gap: 20px;
-}
-
-.game_box_art {
-    width: 20%;
-    height: 100%;
-}
-
-.game_box_art > img {
-    border-radius: 20px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.page2_btn {
-    margin-top: 40px;
-    width: fit-content;
-    background-color: rgb(207, 93, 0);
-    border-radius: 7px;
-    padding-block: 10px;
-    padding-inline: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-    right: 0;
-    position: fixed;
-    top: 180;
-    left: 30;
-}
-
-.page2_btn > a {
-    margin-block: 0;
-}
-
-.page1_btn {
-    margin-top: 40px;
-    width: fit-content;
-    background-color: rgb(207, 93, 0);
-    border-radius: 7px;
-    padding-block: 10px;
-    padding-inline: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-    right: 0;
-    position: fixed;
-    top: 130;
-    left: 30;
-}
-
-.page_name_btn {
-    margin-top: 40px;
-    width: fit-content;
-    background-color: rgb(207, 93, 0);
-    border-radius: 7px;
-    padding-block: 10px;
-    padding-inline: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-    right: 0;
-    position: fixed;
-    top: 10;
-    left: 30;
-}
-
-.page1_btn > a {
-    margin-block: 0;
-}
-
-.page3_btn {
-    margin-top: 40px;
-    width: fit-content;
-    background-color: rgb(207, 93, 0);
-    border-radius: 7px;
-    padding-block: 10px;
-    padding-inline: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-    right: 0;
-    position: fixed;
-    top: 230;
-    left: 30;
-}
-
-.page3_btn > a {
-    margin-block: 0;
-}
-
-.invisible {
-    display: none;
-}
-
-.tabs_group {
-    display: flex;
-    flex-direction: row;
-    gap: 4px;
-    align-items: center;
-}
-
-.tabs_group > div {
-    background-color: rgb(207, 93, 0);
-    padding-inline: 10px;
-    padding-block: 5px;
-    font-size: 14px;
-    cursor: default;
-    border-radius: 7px;
-}
-
-.tabs_group > div:hover {
-    color: rgb(78, 78, 78);
-}
-
-.tab_active {
-    background-color: rgb(162, 0, 255) !important;
-}
-
-.tab_content > p {
-    margin-block: 8px;
-}
-
-.texts {
-    width: 80%;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-}
+<html>
+    <head>
+        <title>Dream Games</title>
+        <link rel="stylesheet" href="page2.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <div class="game_box_art">
+            <img src="./img/00.png">
+        </div>
+        <div class="page3_btn">
+            <a href="./page3.html">Наши проекты</a>
+        </div>
+        <div class="page2_btn">
+            <a href="./page2.html">Наши услуги</a>
+        </div>
+        <div class="page1_btn">
+            <a href="./index.html">Главная</a>
+        </div>
+        <div class="page_name_btn">
+            <h1>Dream Games</h1>
+        </div>
+        <div class="texts">
+            <div class="yslygi_info">
+                <h1>Наши услуги</h1>
+                <h3>На этой странице представлены наши услуги. Что-бы их преобрести нужно будет написать нашему модератору в телеграмм, который будет указан ниже.</h3>
+            </div>
+            <div class="header_info_bottom">
+                <div class="tabs_group">
+                    <div class="tab_active" id="firstActiveTab" onclick="clickTab(event)" data-tab-id="tab_description">Все наши услуги</div>
+                    <div onclick="clickTab(event)" data-tab-id="tab_system_requiments">Как их преобрести</div>
+                </div>
+                <div id="tab_description" class="tab_content">
+                    <p>Услуга "Создание сайта" Цена: 400р - приобретая эту услугу вы получаете возможность запросить создание сайта (лёгкой сложности, но мы ещё учимся). Эта услуга подойдёт тем кому нужен лёгкий сайт, а на крутых специалистов денег нету.</p>
+                    <p>Доп. Услуги:</p>
+                    <p>1. Выложить сайт в интернет (на хостинг) Цена: 200р (зависит от домена, например: site.ru, site.com) - в услугу "Создание сайта", не входит функция выкладывания сайта в интернет. Приобретая эту услугу вы может отправить нам готовый сайт и мы выложим его на хостинг, тем самым в интернет.</p>
+                </div>
+                <div id="tab_system_requiments" class="invisible tab_content">
+                    <p>Что-бы приобрести услугу напишите нашему модератору в телеграмм, @Ultra_violetF, оплата строго до реализации вами выбранной услуги. Спасибо за внимание.</p>
+                </div>
+        </div>
+    </body>
+    <footer>
+        <script src="./js/tabsActive.js"></script>
+    </footer>
+</html> 
